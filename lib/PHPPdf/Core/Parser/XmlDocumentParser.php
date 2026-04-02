@@ -63,7 +63,7 @@ class XmlDocumentParser extends XmlParser implements DocumentParser
     private $listeners = [];
     private $prototypes = [];
 
-    public function __construct(ComplexAttributeFactory $complexAttributeFactory, Document $document = null)
+    public function __construct(ComplexAttributeFactory $complexAttributeFactory, ?Document $document = null)
     {
         $this->document   = $document;
         $factory          = new NodeFactory();
@@ -147,7 +147,7 @@ class XmlDocumentParser extends XmlParser implements DocumentParser
      *
      * @return PageCollection Root of node's graph
      */
-    public function parse($content, StylesheetConstraint $stylesheetConstraint = null)
+    public function parse($content, ?StylesheetConstraint $stylesheetConstraint = null)
     {
         if ($stylesheetConstraint !== null) {
             $this->setStylesheetConstraint($stylesheetConstraint);

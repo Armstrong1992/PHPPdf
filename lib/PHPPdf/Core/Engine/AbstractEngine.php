@@ -19,7 +19,7 @@ abstract class AbstractEngine implements Engine
 {
     protected $unitConverter;
     
-    public function __construct(UnitConverter $unitConverter = null)
+    public function __construct(?UnitConverter $unitConverter = null)
     {
         $this->unitConverter = $unitConverter;
     }

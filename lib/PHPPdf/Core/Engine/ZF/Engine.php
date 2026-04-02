@@ -32,7 +32,7 @@ class Engine extends AbstractEngine
     private $graphicsContexts = array();
     private $outlines = array();
     
-    public function __construct(PdfDocument $zendPdf = null, UnitConverter $unitConverter = null)
+    public function __construct(?PdfDocument $zendPdf = null, ?UnitConverter $unitConverter = null)
     {
         parent::__construct($unitConverter);
         $this->zendPdf = $zendPdf;

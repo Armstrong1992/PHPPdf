@@ -32,7 +32,7 @@ class BagContainer
         }
 
         $this->attributeBag = $attributeBag;
-        $this->weight = (double) $weight;
+        $this->weight = (float) $weight;
     }
 
     /**

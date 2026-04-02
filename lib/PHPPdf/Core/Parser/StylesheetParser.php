@@ -32,13 +32,13 @@ class StylesheetParser extends XmlParser
     private $root;
     private $complexAttributeFactory;
 
-    public function __construct(StylesheetConstraint $root = null, $throwExceptionOnConstraintTag = false)
+    public function __construct(?StylesheetConstraint $root = null, $throwExceptionOnConstraintTag = false)
     {
         $this->setRoot($root);
         $this->setThrowsExceptionOnConstraintTag($throwExceptionOnConstraintTag);
     }
 
-    public function setRoot(StylesheetConstraint $root = null)
+    public function setRoot(?StylesheetConstraint $root = null)
     {
         $this->root = $root;
     }
