@@ -19,9 +19,9 @@
     "ext-xmlreader": "*",
     "ext-libxml": "*",
     "zendframework/zendpdf": "dev-master#1a81c1c571e67370b1ef9d79e1eddc8d546d24ef",
-    "laminas/laminas-cache": "^3.1",
-    "laminas/laminas-cache-storage-adapter-memory": "^2.0",
-    "laminas/laminas-cache-storage-adapter-filesystem": "^2.0"
+    "laminas/laminas-cache": "^3.12",
+    "laminas/laminas-cache-storage-adapter-memory": "^2.3",
+    "laminas/laminas-cache-storage-adapter-filesystem": "^2.4"
   },
   "require-dev": {
     "ext-imagick": "*",
